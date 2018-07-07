@@ -1,0 +1,17 @@
+"Warning: /lib/modules/4.14.15-1-ARCH/modules.devname not found - ignoring. starting version 236.
+ERROR: resume: hibernation device 'UUID… not found.
+ERROR: device 'UUID…not found skipping fsck."
+
+Fix by command line of CD/USB Arch linux install
+
+# mount /dev/sda1 /mnt
+
+# arch-chroot /mnt
+
+Now upgrade your system
+# sudo pacman -Syu
+
+# sudo mkinitcpio -P
+
+Reboot
+Ctrl + Alt + Delete
